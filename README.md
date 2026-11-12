@@ -19,6 +19,11 @@ A Java-based console application designed to manage the day-to-day operations of
 - MySQL
 - JDBC
 - IntelliJ IDEA
+ ## Concepts Applied
+- Object-Oriented Programming
+- DBMS and SQL
+- Data Structures and Algorithms
+- CRUD Operations
 
 ## Data Structures Used
 
