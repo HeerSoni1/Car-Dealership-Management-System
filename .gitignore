@@ -1,0 +1,19 @@
+
+# IntelliJ files
+.idea/
+*.iml
+
+# Java compiled files
+*.class
+out/
+target/
+
+# Environment and private configuration
+.env
+config.properties
+
+# Generated files
+*.log
+/invoices/
+/receipts/
+/otp.txt
