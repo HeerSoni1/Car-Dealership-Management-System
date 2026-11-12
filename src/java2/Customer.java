@@ -1,0 +1,87 @@
+package java2;
+
+public class Customer implements Displayable {
+
+    private int customerId;
+    private String name;
+    private String phone;
+    private String email;
+    private String address;
+
+    public Customer(int customerId,
+                    String name,
+                    String phone,
+                    String email,
+                    String address) {
+
+        this.customerId = customerId;
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    private static final String FORMAT = "| %-10s | %-20s | %-12s | %-25s | %-30s |%n";
+    private static final String BORDER =
+            "+------------+----------------------+--------------+---------------------------+--------------------------------+";
+
+    public static void printHeader() {
+
+        System.out.println(BORDER);
+        System.out.printf(FORMAT, "CustomerID", "Name", "Phone", "Email", "Address");
+        System.out.println(BORDER);
+
+    }
+
+    public void display() {
+
+        System.out.printf(FORMAT, customerId, name, phone, email, address);
+
+    }
+
+    public static void printFooter() {
+        System.out.println(BORDER);
+    }
+
+}
